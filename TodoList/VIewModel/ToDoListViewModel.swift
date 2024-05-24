@@ -77,6 +77,7 @@ class TodoListViewModel {
             }
         }
     }
+    
     func delete(_ todo: TodoItem) {
             
             // Create a unit of asynchronous work to add the to-do item
@@ -102,5 +103,27 @@ class TodoListViewModel {
             }
                     
         }
+    
+    func update(todo updatedTodo: TodoItem) {
+           
+           // Create a unit of asynchronous work to add the to-do item
+           Task {
+               
+               do {
+                   
+                   // Run the update command
+                   try await supabase
+                       .from("todos")
+                       .update(updatedTodo)
+                       .eq("id", value: updatedTodo.id!)   // Only update the row whose id
+                       .execute()                          // matches that of the to-do being deleted
+                       
+               } catch {
+                   debugPrint(error)
+               }
+               
+           }
+           
+       }
     
 }
