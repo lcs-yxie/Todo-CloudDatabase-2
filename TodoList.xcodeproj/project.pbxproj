@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6438BFA72C0540C800152940 /* AppEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438BFA62C0540C800152940 /* AppEntryView.swift */; };
+		6438BFA92C0540FC00152940 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438BFA82C0540FC00152940 /* AuthView.swift */; };
 		6468B28C2BFCD0E200A4F729 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468B28B2BFCD0E200A4F729 /* ToDoListViewModel.swift */; };
 		6468B28F2BFCD86E00A4F729 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 6468B28E2BFCD86E00A4F729 /* Auth */; };
 		6468B2912BFCD86E00A4F729 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 6468B2902BFCD86E00A4F729 /* Functions */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6438BFA62C0540C800152940 /* AppEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryView.swift; sourceTree = "<group>"; };
+		6438BFA82C0540FC00152940 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		6468B28B2BFCD0E200A4F729 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
 		6468B2982BFCDA5800A4F729 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		814A08FB2BC41BC500921E4F /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				815D9D7E2BC413800050957E /* LandingView.swift */,
+				6438BFA62C0540C800152940 /* AppEntryView.swift */,
+				6438BFA82C0540FC00152940 /* AuthView.swift */,
 				814A08FB2BC41BC500921E4F /* ItemView.swift */,
 			);
 			path = Views;
@@ -203,9 +209,11 @@
 			files = (
 				815D9D7F2BC413800050957E /* LandingView.swift in Sources */,
 				6468B2992BFCDA5800A4F729 /* Supabase.swift in Sources */,
+				6438BFA72C0540C800152940 /* AppEntryView.swift in Sources */,
 				814A08FC2BC41BC500921E4F /* ItemView.swift in Sources */,
 				814A08FE2BC41C7800921E4F /* TodoItem.swift in Sources */,
 				815D9D7D2BC413800050957E /* TodoListApp.swift in Sources */,
+				6438BFA92C0540FC00152940 /* AuthView.swift in Sources */,
 				6468B28C2BFCD0E200A4F729 /* ToDoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
