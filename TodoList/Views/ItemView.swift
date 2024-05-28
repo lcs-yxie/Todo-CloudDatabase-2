@@ -34,11 +34,9 @@ struct ItemView: View {
 }
 
 #Preview {
-    
-    @State var previewViewModel = TodoListViewModel()
-    
+        
     List {
-        ItemView(currentItem: .constant(firstItem), viewModel: previewViewModel)
-        ItemView(currentItem: .constant(secondItem)viewModel: previewViewModel)
+        ItemView(currentItem: .constant(firstItem))
+        ItemView(currentItem: .constant(secondItem))
     }
 }
